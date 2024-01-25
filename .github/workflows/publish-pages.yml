@@ -15,6 +15,7 @@ jobs:
           mkdir dist
           npm ci
           npm run build
+          touch dist/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
