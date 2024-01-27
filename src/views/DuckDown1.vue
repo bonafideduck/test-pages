@@ -1,15 +1,76 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div id="red" class="box" style="position: relative; left: 40px; width: 100px; background: red">
-    <div id="pink" class="box" style="background: pink"></div>
+  <div class="container push-r">
+    A
+    <div class="medium">AA</div>
+    <div class="medium">AB</div>
+    <div class="medium">AC</div>
+    <div class="medium">AD</div>
+    <div class="medium">AE</div>
   </div>
-  <div id="green" class="box" style="background: green"></div>
-  <div id="blue" class="box" style="background: blue"></div>
-  <div id="orange" class="box" style="background: orange"></div>
+  <div class="large">D</div>
+  <div class="large">E</div>
+  <div class="large">F</div>
 </template>
 
 <style>
-.box {
-  height: 75vh;
+#app div {
+  background-image: linear-gradient(
+    to bottom right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  border: 1px solid black;
+  color: white;
+}
+
+.container {
+  height: 800px;
+  width: 400px;
+  border: 1px solid black;
+  position: relative;
+}
+.large {
+  height: 400px;
+  width: 300px;
+}
+.medium {
+  height: 200px;
+  width: 200px;
+}
+.small {
+  height: 100px;
   width: 100px;
+}
+.tiny {
+  height: 50px;
+  width: 50px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.push-r {
+  left: 150px;
+}
+
+.nudge-dr {
+  top: 50px;
+  left: 50px;
 }
 </style>
